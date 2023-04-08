@@ -1,32 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Footer from './components/Footer.vue'
+import Home from './views/Home.vue'
 import { def } from '@vue/shared';
 
 </script>
 
 <template>
-  <!-- Creating header home for all the One-Page application -->
-  <!-- The header will have a responsive navigation bar that will collapse in case of mobile device -->
-  <!-- It will consists in 6 links floated on right -->
-
-  <!--<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <span style="margin-left: 40px;" class="fs-4">AG</span>
-      </a>
-
-      <ul class="navbar nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="/skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
-      </ul>
-    </header>
-  </div>-->
-  <div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top" style="background-color: white;">
+  
+  <div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-center py-2 mb-3 border-bottom sticky-top" style="background-color: white;">
     <div class="container-fluid" style="margin-left: 30px;">
       <a class="navbar-brand" href="/"> AG </a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,50 +41,22 @@ import { def } from '@vue/shared';
       class="scrollspy-example"
     >
       <section id="#Home">
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        
+        <Home/>
       </section>
       <section id="#About">
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
+
         
       </section>
       <section id="#Resume">
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
+
         
       </section>
       <section id="#Skills">
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
+
         
       </section>
       <section id="#Projects">
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
-        prova<br>
+
         
       </section>
       <section id="#Contacts">
@@ -119,13 +73,16 @@ import { def } from '@vue/shared';
 <script>
   export default{
     components:{
-      Footer
+      Footer, Home
     }
   }
 </script>
 
 
 <style scoped>
+  .navbar-collapse{
+    flex-grow: 0;
+  }
   .nav-link{
     color: black;
   };
