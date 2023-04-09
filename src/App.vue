@@ -10,7 +10,7 @@ import { def } from '@vue/shared';
   
   <div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-center py-2 mb-3 border-bottom sticky-top" style="background-color: white;">
     <div class="container-fluid" style="margin-left: 30px;">
-      <a class="navbar-brand" href="/"> AG </a>
+      <a class="navbar-brand" href="#Home"> AG </a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -66,7 +66,6 @@ import { def } from '@vue/shared';
   </div>
 
   <!-- Importing then the pages-->
-  <RouterView />
   <Footer />
 </template>
 

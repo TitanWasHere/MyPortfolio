@@ -1,21 +1,26 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-7 col-md-12">
-                <vue-typed-js :strings="['Software Engineer', 'Frontend Developer' , 'Backend Developer' , 'Student', 'Designer']" :typeSpeed="50" :loop="true" :backSpeed="50">
+            <div class="col-8 ">
+                prova
+                <Typed :strings="['Software Engineer', 'Frontend Developer' , 'Backend Developer' , 'Student', 'Designer']" :typeSpeed="50" :loop="true" :backSpeed="50">
                     I'm a <span class="tpying"></span>
-                </vue-typed-js>
+                </Typed>
             </div>
-            <div class="col-5 d-none d-lg-block">
-                <img src="./../assets/MySelf.png">
+            <div class="col-4 d-none d-lg-block">
+                <img src="./../assets/MySelf.png" style="width: 100%;">
             </div>
         </div>
     </div>
 </template>
 
 <script>
-
-
+import VueTypedJs from 'vue-typed-js';
+export default{
+    components: {
+        Typed: VueTypedJs,
+    }
+}
 
 
 </script>
